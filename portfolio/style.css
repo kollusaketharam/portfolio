@@ -1,0 +1,71 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+nav button {
+  background: none;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+nav button:hover {
+  background: #0ff;
+  color: #0d0d0d;
+  box-shadow: 0 0 15px #0ff;
+}
+nav button:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 25px #ff00ff;
+}
+
+/* Page content */
+main {
+  padding-top: 120px;
+}
+h1 {
+  font-size: 36px;
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+  margin-bottom: 20px;
+}
+p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Floating logos */
+.logo {
+  position: absolute;
+  width: 60px;
+  opacity: 0.7;
+  animation: float 15s linear infinite;
+}
+@keyframes float {
+  from { transform: translateY(100vh) rotate(0deg); }
+  to { transform: translateY(-120vh) rotate(360deg); }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Saketharam</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Neon glowing profile image */
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #0ff;
+      box-shadow: 0 0 20px #0ff, 0 0 40px #ff00ff, 0 0 60px #0ff;
+      margin: 20px auto;
+      display: block;
+      animation: neon-glow 2s infinite alternate;
+    }
+    @keyframes neon-glow {
+      from { box-shadow: 0 0 20px #0ff, 0 0 40px #ff00ff; }
+      to   { box-shadow: 0 0 40px #ff00ff, 0 0 80px #0ff; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="goTo('index.html')">Home</button>
+    <button onclick="goTo('about.html')">About</button>
+    <button onclick="goTo('projects.html')">Projects</button>
+  </nav>
+
+  <main>
+    <h1>About Me</h1>
+    <!-- Neon glowing profile photo -->
+    <img src="assets/saketh.jpg" alt="Saketharam" class="profile-pic">
+    
+    <p>
+      I am Saketharam, passionate about AI, ML, and Web Development.  
+      I am currently pursuing <b>B.Tech</b> at <b>BMSCE, Bengaluru, Karnataka</b>.  
+      I have worked with <b>Python</b>, <b>PyTorch</b>, <b>Keras</b>, and web stacks like <b>Node.js</b> & <b>Express</b>.
+    </p>
+  </main>
+
+  <!-- Floating logos -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="logo" style="left:20%;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="logo" style="left:40%;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="logo" style="left:60%;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="logo" style="left:80%;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="logo" style="left:90%;">
+
+  <script src="script.js"></script>
+</body>
+</html>
